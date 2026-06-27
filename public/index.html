@@ -55,6 +55,12 @@
             box-sizing: border-box;
         }
 
+        html, body {
+            overflow-x: clip;
+            width: 100%;
+            max-width: 100%;
+        }
+
         body {
             font-family: 'Inter', sans-serif;
             background: var(--surface);
@@ -467,7 +473,7 @@
             <div style="max-width:1280px; margin:0 auto; padding:0 32px; position:relative; z-index:2; display:flex; flex-wrap:wrap; gap:60px; align-items:center;">
                 
                 <!-- Left Content -->
-                <div class="reveal" style="flex:1 1 500px; padding-right:20px;">
+                <div class="reveal" style="flex:1 1 100%; min-width: 280px; max-width: 600px;">
                     <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.1); padding:8px 16px; border-radius:30px; font-size:0.85rem; font-weight:700; color:#34d399; margin-bottom:24px; border:1px solid rgba(255,255,255,0.15); backdrop-filter: blur(10px);">
                         <span class="material-symbols-rounded" style="font-size:1.2rem;">workspace_premium</span> Pengenalan Eksekutif
                     </div>
@@ -491,7 +497,7 @@
                 </div>
                 
                 <!-- Right Content (Glass Card) -->
-                <div class="reveal" style="flex:1 1 400px; transition-delay: 200ms;">
+                <div class="reveal" style="flex:1 1 100%; min-width: 280px; max-width: 500px; transition-delay: 200ms;">
                     <div style="background:rgba(255,255,255,0.95); backdrop-filter: blur(20px); border-radius:32px; padding:48px 40px; box-shadow:0 40px 80px rgba(0,0,0,0.4); color:var(--text-primary); position:relative;">
                         <div style="position:absolute; top:-24px; right:40px; background:linear-gradient(135deg, var(--blue) 0%, #0052a3 100%); color:white; width:72px; height:72px; border-radius:24px; display:flex; align-items:center; justify-content:center; box-shadow:0 15px 30px rgba(0,102,204,0.4); transform: rotate(10deg);">
                             <span class="material-symbols-rounded" style="font-size:2.5rem;">help_center</span>
