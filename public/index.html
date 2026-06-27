@@ -55,10 +55,14 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-padding-top: 80px;
+        }
+
         html, body {
             overflow-x: hidden !important;
             width: 100%;
-            max-width: 100vw;
+            max-width: 100%;
             position: relative;
         }
 
@@ -373,7 +377,7 @@
         </div>
     </header>
 
-    <main style="overflow-x: hidden; width: 100%; max-width: 100vw; position: relative;">
+    <main style="overflow-x: hidden; width: 100%; max-width: 100%; position: relative;">
 
         <!-- ============ HERO ============ -->
         <section id="home"
@@ -772,10 +776,10 @@
                 </div>
 
                 <!-- BENTO GRID -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[240px]">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-auto md:auto-rows-[240px]">
                     
                     <!-- Proposisi Nilai (Left Large) -->
-                    <div onclick="openBompModal('modal-proposisi')" class="cursor-pointer md:col-span-2 md:row-span-2 relative rounded-3xl overflow-hidden group text-left shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <div onclick="openBompModal('modal-proposisi')" class="cursor-pointer min-h-[380px] md:min-h-0 md:col-span-2 md:row-span-2 relative rounded-3xl overflow-hidden group text-left shadow-lg hover:shadow-2xl transition-shadow duration-300">
                         <div class="absolute inset-0 bg-[var(--navy)]"></div>
                         <div class="absolute inset-0 bg-gradient-to-tr from-[var(--navy)] via-[var(--navy)] to-transparent opacity-90 z-10"></div>
                         <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-30 transition-transform duration-700"></div>
@@ -1121,13 +1125,13 @@
 
         // Reveal on scroll
         const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry, i) => {
+            entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    setTimeout(() => entry.target.classList.add('visible'), i * 80);
+                    entry.target.classList.add('visible');
                     revealObserver.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.1 });
+        }, { rootMargin: '100px 0px', threshold: 0 });
 
         document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
     </script>
@@ -1231,9 +1235,9 @@
                             <span class="font-bold text-[var(--navy)]">RM 56,000</span>
                         </div>
                     </div>
-                    <div class="mt-8 flex items-center justify-between bg-[var(--navy)] p-6 rounded-xl shadow-md text-white">
+                    <div class="mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-[var(--navy)] p-6 rounded-xl shadow-md text-white">
                         <span class="font-bold uppercase tracking-wider text-sm opacity-80">Jumlah Keseluruhan (Anggaran)</span>
-                        <span class="font-black text-3xl text-[var(--gold)]">RM 150,000</span>
+                        <span class="font-black text-2xl md:text-3xl text-[var(--gold)] whitespace-nowrap">RM 150,000</span>
                     </div>
                 </div>
                 
