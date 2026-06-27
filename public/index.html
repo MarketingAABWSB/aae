@@ -7,6 +7,7 @@
     <title>A-Cond Auto Expert (AAE) | Pakar Aircond Kereta Kelantan</title>
     <meta name="description"
         content="A-Cond Auto Expert (AAE) - Jenama di bawah Azam Auto Body Work (M) Sdn Bhd. Program francais terbaik untuk usahawan bengkel di Kelantan.">
+    <link rel="icon" type="image/png" href="assets/azam-auto-logo-nobg.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -321,11 +322,13 @@
                 <img src="assets/azam-auto-logo-nobg.png" alt="Azam Auto"
                     style="height:44px;width:auto;object-fit:contain;">
                 <span
-                    style="font-family:Montserrat,sans-serif;font-weight:800;font-size:1rem;color:var(--navy);letter-spacing:-0.01em;display:none;"
-                    class="brand-label">A-Cond Auto Expert</span>
+                    style="font-family:Montserrat,sans-serif;font-weight:800;font-size:1rem;color:var(--navy);letter-spacing:-0.01em;"
+                    class="hidden sm:block brand-label">A-Cond Auto Expert</span>
             </a>
+            
             <div style="display:flex;align-items:center;gap:32px;">
-                <div style="display:none;gap:28px;" id="nav-links">
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-7" id="nav-links">
                     <a href="#home" class="nav-link">Utama</a>
                     <a href="#objektif" class="nav-link">Objektif</a>
                     <a href="#sasaran" class="nav-link">Sasaran</a>
@@ -333,12 +336,33 @@
                     <a href="#bomp" class="nav-link">Program BOMP</a>
                     <a href="#locations" class="nav-link">Cawangan</a>
                 </div>
-                <a href="https://api.whatsapp.com/send?phone=60123741726&text=Hi%20Azam%20Auto." target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding:10px 22px;font-size:0.78rem;">
+                <a href="https://api.whatsapp.com/send?phone=60123741726&text=Hi%20Azam%20Auto." target="_blank" rel="noopener noreferrer" class="btn-primary hidden sm:flex" style="padding:10px 22px;font-size:0.78rem;">
                     <span class="material-symbols-rounded" style="font-size:1rem;">handshake</span>
                     Sertai AAE
                 </a>
+                
+                <!-- Mobile Hamburger Button -->
+                <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 rounded-lg hover:bg-gray-100 text-gray-700 transition-colors">
+                    <span class="material-symbols-rounded text-2xl">menu</span>
+                </button>
             </div>
         </nav>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white/95 backdrop-blur-xl absolute w-full left-0 top-[68px] shadow-lg shadow-blue-900/5">
+            <div class="flex flex-col py-4 px-6 gap-4">
+                <a href="#home" class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Utama</a>
+                <a href="#objektif" class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Objektif</a>
+                <a href="#sasaran" class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Sasaran</a>
+                <a href="#kelebihan" class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Kelebihan</a>
+                <a href="#bomp" class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Program BOMP</a>
+                <a href="#locations" class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Cawangan</a>
+                <a href="https://api.whatsapp.com/send?phone=60123741726&text=Hi%20Azam%20Auto." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-[var(--blue)] text-white py-3 px-6 rounded-xl font-bold mt-2">
+                    <span class="material-symbols-rounded text-xl">handshake</span>
+                    Sertai AAE
+                </a>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -1040,11 +1064,32 @@
     </footer>
 
     <script>
-        // Show nav links & brand label on larger screens
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = mobileMenuBtn.querySelector('.material-symbols-rounded');
+                icon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+            });
+
+            // Close mobile menu when a link is clicked
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    if(mobileMenuBtn.querySelector('.material-symbols-rounded')) {
+                        mobileMenuBtn.querySelector('.material-symbols-rounded').textContent = 'menu';
+                    }
+                });
+            });
+        }
+
+        // Handle hero poster resizing
         function updateNav() {
             const w = window.innerWidth;
-            document.getElementById('nav-links').style.display = w >= 768 ? 'flex' : 'none';
-            document.querySelectorAll('.brand-label').forEach(el => el.style.display = w >= 640 ? 'block' : 'none');
             const poster = document.getElementById('hero-poster');
             if (poster) poster.style.display = w >= 1024 ? 'block' : 'none';
         }
