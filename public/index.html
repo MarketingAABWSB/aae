@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A-Cond Auto Expert (AAE) | Pakar Aircond Kereta Kelantan</title>
     <meta name="description"
-        content="A-Cond Auto Expert (AAE) - Jenama di bawah Azam Auto Body Work (M) Sdn Bhd. Program francais terbaik untuk usahawan bengkel di Kelantan.">
+        content="A-Cond Auto Expert (AAE) - Jenama di bawah Azam Auto Body Work (M) Sdn Bhd. Program francais terbaik untuk usahawan bengkel.">
     <link rel="icon" type="image/png" href="assets/azam-auto-logo-nobg.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,24 +18,24 @@
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              navy: '#0b1f3a',
-              'navy-mid': '#0f2d56',
-              blue: '#00355f',
-              'blue-light': '#1a5276',
-              red: '#9a000e',
-              'red-light': '#c0392b',
-              gold: '#f5c518',
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0b1f3a',
+                        'navy-mid': '#0f2d56',
+                        blue: '#00355f',
+                        'blue-light': '#1a5276',
+                        red: '#9a000e',
+                        'red-light': '#c0392b',
+                        gold: '#f5c518',
+                    }
+                }
             }
-          }
         }
-      }
     </script>
     <style>
-                :root {
+        :root {
             --navy: #0b1f3a;
             --navy-mid: #0f2d56;
             --blue: #00355f;
@@ -59,7 +59,8 @@
             scroll-padding-top: 80px;
         }
 
-        html, body {
+        html,
+        body {
             overflow-x: hidden !important;
             width: 100%;
             max-width: 100%;
@@ -74,7 +75,10 @@
             padding-top: 68px;
         }
 
-        h1, h2, h3, h4 {
+        h1,
+        h2,
+        h3,
+        h4 {
             font-family: 'Outfit', sans-serif;
         }
 
@@ -191,7 +195,7 @@
             text-transform: uppercase;
             margin-bottom: 24px;
             backdrop-filter: blur(4px);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
         }
 
         /* CARDS */
@@ -230,7 +234,7 @@
 
         .bento.bento-accent {
             background: var(--navy);
-            border-color: rgba(255,255,255,0.1);
+            border-color: rgba(255, 255, 255, 0.1);
             color: white;
         }
 
@@ -314,13 +318,13 @@
             padding: 120px 0;
             position: relative;
         }
-        
+
         .glass-panel {
             background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(24px);
             -webkit-backdrop-filter: blur(24px);
             border: 1px solid rgba(255, 255, 255, 0.5);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
         }
     </style>
 </head>
@@ -339,7 +343,7 @@
                     style="font-family:'Outfit',sans-serif;font-weight:800;font-size:1rem;color:var(--navy);letter-spacing:-0.01em;"
                     class="hidden sm:block brand-label">A-Cond Auto Expert</span>
             </a>
-            
+
             <div style="display:flex;align-items:center;gap:32px;">
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center gap-7" id="nav-links">
@@ -350,28 +354,41 @@
                     <a href="#bomp" class="nav-link">Program BOMP</a>
                     <a href="#locations" class="nav-link">Cawangan</a>
                 </div>
-                <a href="https://api.whatsapp.com/send?phone=60123741726&text=Saya%20berminat%20tentang%20AAE" target="_blank" rel="noopener noreferrer" class="btn-primary hidden sm:flex" style="padding:10px 22px;font-size:0.78rem;">
+                <a href="https://api.whatsapp.com/send?phone=60123741726&text=Saya%20berminat%20tentang%20AAE"
+                    target="_blank" rel="noopener noreferrer" class="btn-primary hidden sm:flex"
+                    style="padding:10px 22px;font-size:0.78rem;">
                     <span class="material-symbols-rounded" style="font-size:1rem;">handshake</span>
                     Sertai AAE
                 </a>
-                
+
                 <!-- Mobile Hamburger Button -->
-                <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 rounded-lg hover:bg-gray-100 text-gray-700 transition-colors">
+                <button id="mobile-menu-btn"
+                    class="md:hidden flex items-center justify-center p-2 rounded-lg hover:bg-gray-100 text-gray-700 transition-colors">
                     <span class="material-symbols-rounded text-2xl">menu</span>
                 </button>
             </div>
         </nav>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white/95 backdrop-blur-xl absolute w-full left-0 top-[68px] shadow-lg shadow-blue-900/5">
+        <div id="mobile-menu"
+            class="hidden md:hidden border-t border-gray-100 bg-white/95 backdrop-blur-xl absolute w-full left-0 top-[68px] shadow-lg shadow-blue-900/5">
             <div class="flex flex-col py-4 px-6 gap-4">
-                <a href="#home" class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Utama</a>
-                <a href="#objektif" class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Objektif</a>
-                <a href="#sasaran" class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Sasaran</a>
-                <a href="#kelebihan" class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Kelebihan</a>
-                <a href="#bomp" class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Program BOMP</a>
-                <a href="#locations" class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Cawangan</a>
-                <a href="https://api.whatsapp.com/send?phone=60123741726&text=Saya%20berminat%20tentang%20AAE" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-[var(--blue)] text-white py-3 px-6 rounded-xl font-bold mt-2">
+                <a href="#home"
+                    class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Utama</a>
+                <a href="#objektif"
+                    class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Objektif</a>
+                <a href="#sasaran"
+                    class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Sasaran</a>
+                <a href="#kelebihan"
+                    class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Kelebihan</a>
+                <a href="#bomp"
+                    class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Program
+                    BOMP</a>
+                <a href="#locations"
+                    class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Cawangan</a>
+                <a href="https://api.whatsapp.com/send?phone=60123741726&text=Saya%20berminat%20tentang%20AAE"
+                    target="_blank" rel="noopener noreferrer"
+                    class="flex items-center justify-center gap-2 bg-[var(--blue)] text-white py-3 px-6 rounded-xl font-bold mt-2">
                     <span class="material-symbols-rounded text-xl">handshake</span>
                     Sertai AAE
                 </a>
@@ -384,7 +401,8 @@
         <!-- ============ HERO ============ -->
         <section id="home"
             style="padding:0;position:relative;height:calc(100vh - 68px);min-height:550px;display:flex;align-items:center;overflow:hidden;">
-            <img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&w=1920&q=80" alt="Workshop Background"
+            <img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&w=1920&q=80"
+                alt="Workshop Background"
                 style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;" />
             <div
                 style="position:absolute;inset:0;background:linear-gradient(110deg, rgba(11,31,58,0.92) 0%, rgba(11,31,58,0.7) 55%, rgba(11,31,58,0.15) 100%);z-index:1;">
@@ -399,7 +417,8 @@
                         <span
                             style="width:6px;height:6px;background:#f5c518;border-radius:50%;display:inline-block;"></span>
                         <span
-                            style="font-size:0.75rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#f5c518;">A-COND AUTO EXPERT (AAE)</span>
+                            style="font-size:0.75rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#f5c518;">A-COND
+                            AUTO EXPERT (AAE)</span>
                     </div>
 
                     <h1
@@ -413,15 +432,18 @@
                     </p>
                     <p
                         style="font-size:0.9rem;line-height:1.6;color:rgba(255,255,255,0.8);margin:0 0 12px;max-width:520px;">
-                        Ubah bengkel tradisional anda kepada pusat servis sistematik demi menjamin masa depan perniagaan.
+                        Ubah bengkel tradisional anda kepada pusat servis sistematik demi menjamin masa depan
+                        perniagaan.
                     </p>
                     <p
                         style="font-size:0.9rem;line-height:1.6;color:rgba(255,255,255,0.9);margin:0 0 24px;max-width:500px;">
-                        <strong style="color:#f5c518;">Tawaran Kami:</strong> Sertai Program Pembangunan Brand Outlet AAE melalui <em>Brand Operating Monitoring Program (BOMP)</em>.
+                        <strong style="color:#f5c518;">Tawaran Kami:</strong> Sertai Program Pembangunan Brand Outlet
+                        AAE melalui <em>Brand Operating Monitoring Program (BOMP)</em>.
                     </p>
 
                     <div style="display:flex;gap:14px;flex-wrap:wrap;">
-                        <a href="https://api.whatsapp.com/send?phone=60123741726&text=Saya%20berminat%20tentang%20AAE" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                        <a href="https://api.whatsapp.com/send?phone=60123741726&text=Saya%20berminat%20tentang%20AAE"
+                            target="_blank" rel="noopener noreferrer" class="btn-primary">
                             Sertai AAE
                             <span class="material-symbols-rounded" style="font-size:1rem;">arrow_forward</span>
                         </a>
@@ -435,16 +457,14 @@
                     <div
                         style="display:flex;gap:32px;margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.12);">
                         <div>
-                            <div
-                                style="font-family:'Outfit',sans-serif;font-size:1.8rem;font-weight:800;color:white;">
+                            <div style="font-family:'Outfit',sans-serif;font-size:1.8rem;font-weight:800;color:white;">
                                 2+</div>
                             <div style="font-size:0.78rem;color:rgba(255,255,255,0.55);margin-top:2px;">Cawangan Aktif
                             </div>
                         </div>
                         <div style="width:1px;background:rgba(255,255,255,0.12);"></div>
                         <div>
-                            <div
-                                style="font-family:'Outfit',sans-serif;font-size:1.8rem;font-weight:800;color:white;">
+                            <div style="font-family:'Outfit',sans-serif;font-size:1.8rem;font-weight:800;color:white;">
                                 BOMP</div>
                             <div style="font-size:0.78rem;color:rgba(255,255,255,0.55);margin-top:2px;">Program
                                 Terstruktur</div>
@@ -471,70 +491,108 @@
             </div>
         </section>
 
-        
+
         <!-- ============ PENGENALAN EKSEKUTIF ============ -->
-        <section id="pengenalan" style="background: linear-gradient(135deg, var(--navy) 0%, #081525 100%); padding: 100px 0; color: white; position:relative; overflow:hidden;">
+        <section id="pengenalan"
+            style="background: linear-gradient(135deg, var(--navy) 0%, #081525 100%); padding: 100px 0; color: white; position:relative; overflow:hidden;">
             <!-- Background Decoration -->
-            <div style="position:absolute; top:-20%; left:-10%; width:500px; height:500px; background: radial-gradient(circle, rgba(0,102,204,0.15) 0%, transparent 70%); border-radius:50%;"></div>
-            <div style="position:absolute; bottom:-20%; right:-10%; width:600px; height:600px; background: radial-gradient(circle, rgba(16,185,129,0.1) 0%, transparent 70%); border-radius:50%;"></div>
-            
-            <div style="max-width:1280px; margin:0 auto; padding:0 32px; position:relative; z-index:2; display:flex; flex-wrap:wrap; gap:60px; align-items:center;">
-                
+            <div
+                style="position:absolute; top:-20%; left:-10%; width:500px; height:500px; background: radial-gradient(circle, rgba(0,102,204,0.15) 0%, transparent 70%); border-radius:50%;">
+            </div>
+            <div
+                style="position:absolute; bottom:-20%; right:-10%; width:600px; height:600px; background: radial-gradient(circle, rgba(16,185,129,0.1) 0%, transparent 70%); border-radius:50%;">
+            </div>
+
+            <div
+                style="max-width:1280px; margin:0 auto; padding:0 32px; position:relative; z-index:2; display:flex; flex-wrap:wrap; gap:60px; align-items:center;">
+
                 <!-- Left Content -->
                 <div class="reveal" style="flex:1 1 100%; min-width: 280px; max-width: 600px;">
-                    <h2 style="font-size:clamp(2.2rem, 4vw, 3rem); font-weight:900; margin-bottom:24px; line-height:1.15; letter-spacing:-0.03em;">
+                    <h2
+                        style="font-size:clamp(2.2rem, 4vw, 3rem); font-weight:900; margin-bottom:24px; line-height:1.15; letter-spacing:-0.03em;">
                         Program Francais <span style="color:var(--gold);">A-Cond Auto Expert (AAE)</span>
                     </h2>
-                    <p style="font-size:1.15rem; color:rgba(255,255,255,0.7); line-height:1.7; margin-bottom:40px; max-width: 550px;">
-                        Lengkapkan diri anda dengan kepakaran pengurusan operasi, teknikal, dan pentadbiran bengkel yang bersistematik. 100% milik anda, tanpa perkongsian saham.
+                    <p
+                        style="font-size:1.15rem; color:rgba(255,255,255,0.7); line-height:1.7; margin-bottom:40px; max-width: 550px;">
+                        Lengkapkan diri anda dengan kepakaran pengurusan operasi, teknikal, dan pentadbiran bengkel yang
+                        bersistematik. 100% milik anda, tanpa perkongsian saham.
                     </p>
-                    
+
                     <div style="display:grid; grid-template-columns:1fr; gap:24px;">
-                        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); padding:24px; border-radius:20px; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
-                            <strong style="color:var(--gold); display:block; margin-bottom:8px; font-size:0.95rem; text-transform:uppercase; letter-spacing:1px;">Syarikat Induk</strong>
-                            <span style="color:white; font-size:1.15rem; font-weight: 600;">Azam Auto Body Work & Services (M) Sdn Bhd (AABW)</span>
+                        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); padding:24px; border-radius:20px; transition: transform 0.3s ease;"
+                            onmouseover="this.style.transform='translateY(-5px)'"
+                            onmouseout="this.style.transform='translateY(0)'">
+                            <strong
+                                style="color:var(--gold); display:block; margin-bottom:8px; font-size:0.95rem; text-transform:uppercase; letter-spacing:1px;">Syarikat
+                                Induk</strong>
+                            <span style="color:white; font-size:1.15rem; font-weight: 600;">Azam Auto Body Work &
+                                Services (M) Sdn Bhd (AABW)</span>
                         </div>
-                        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); padding:24px; border-radius:20px; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
-                            <strong style="color:var(--gold); display:block; margin-bottom:8px; font-size:0.95rem; text-transform:uppercase; letter-spacing:1px;">Pencapaian Industri</strong>
-                            <span style="color:white; font-size:1.15rem; font-weight: 600;">Penerima Anugerah Ikon Usahawan Industri Automotif Negeri Kelantan 2024-2025 (AURA)</span>
+                        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); padding:24px; border-radius:20px; transition: transform 0.3s ease;"
+                            onmouseover="this.style.transform='translateY(-5px)'"
+                            onmouseout="this.style.transform='translateY(0)'">
+                            <strong
+                                style="color:var(--gold); display:block; margin-bottom:8px; font-size:0.95rem; text-transform:uppercase; letter-spacing:1px;">Pencapaian
+                                Industri</strong>
+                            <span style="color:white; font-size:1.15rem; font-weight: 600;">Penerima Anugerah Ikon
+                                Usahawan Industri Automotif Negeri Kelantan 2024-2025 (AURA)</span>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Right Content (Glass Card) -->
                 <div class="reveal" style="flex:1 1 100%; min-width: 280px; max-width: 500px; transition-delay: 200ms;">
-                    <div style="background:rgba(255,255,255,0.95); backdrop-filter: blur(20px); border-radius:24px; padding:48px 40px; box-shadow:0 40px 80px rgba(0,0,0,0.4); color:var(--text-primary); position:relative;">
-                        <div style="position:absolute; top:-24px; right:40px; background:linear-gradient(135deg, var(--blue) 0%, #0052a3 100%); color:white; width:72px; height:72px; border-radius:24px; display:flex; align-items:center; justify-content:center; box-shadow:0 15px 30px rgba(0,102,204,0.4); transform: rotate(10deg);">
+                    <div
+                        style="background:rgba(255,255,255,0.95); backdrop-filter: blur(20px); border-radius:24px; padding:48px 40px; box-shadow:0 40px 80px rgba(0,0,0,0.4); color:var(--text-primary); position:relative;">
+                        <div
+                            style="position:absolute; top:-24px; right:40px; background:linear-gradient(135deg, var(--blue) 0%, #0052a3 100%); color:white; width:72px; height:72px; border-radius:24px; display:flex; align-items:center; justify-content:center; box-shadow:0 15px 30px rgba(0,102,204,0.4); transform: rotate(10deg);">
                             <span class="material-symbols-rounded" style="font-size:2.5rem;">help_center</span>
                         </div>
-                        <h3 style="font-size:1.8rem; font-weight:900; color:var(--navy); margin-bottom:32px;">Apa itu BOMP?</h3>
-                        
-                        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:28px;">
+                        <h3 style="font-size:1.8rem; font-weight:900; color:var(--navy); margin-bottom:32px;">Apa itu
+                            BOMP?</h3>
+
+                        <ul
+                            style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:28px;">
                             <li style="display:flex; gap:20px; align-items:flex-start;">
-                                <div style="width:48px; height:48px; border-radius:14px; background:rgba(0,102,204,0.1); color:var(--blue); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                                <div
+                                    style="width:48px; height:48px; border-radius:14px; background:rgba(0,102,204,0.1); color:var(--blue); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                                     <span class="material-symbols-rounded">psychology</span>
                                 </div>
                                 <div>
-                                    <strong style="color:var(--navy); display:block; margin-bottom:6px; font-size:1.1rem; font-weight:800;">Pemindahan Kepakaran</strong>
-                                    <span style="color:var(--text-secondary); font-size:0.95rem; line-height:1.6; display:block;">Kuasai operasi, teknikal dan pentadbiran bengkel yang sebenar.</span>
+                                    <strong
+                                        style="color:var(--navy); display:block; margin-bottom:6px; font-size:1.1rem; font-weight:800;">Pemindahan
+                                        Kepakaran</strong>
+                                    <span
+                                        style="color:var(--text-secondary); font-size:0.95rem; line-height:1.6; display:block;">Kuasai
+                                        operasi, teknikal dan pentadbiran bengkel yang sebenar.</span>
                                 </div>
                             </li>
                             <li style="display:flex; gap:20px; align-items:flex-start;">
-                                <div style="width:48px; height:48px; border-radius:14px; background:rgba(154,0,14,0.1); color:var(--red); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                                <div
+                                    style="width:48px; height:48px; border-radius:14px; background:rgba(154,0,14,0.1); color:var(--red); display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                                     <span class="material-symbols-rounded">verified</span>
                                 </div>
                                 <div>
-                                    <strong style="color:var(--navy); display:block; margin-bottom:6px; font-size:1.1rem; font-weight:800;">Pemilikan Mutlak</strong>
-                                    <span style="color:var(--text-secondary); font-size:0.95rem; line-height:1.6; display:block;">Anda kekal 100% pemilik, hanya guna kebenaran lesen jenama AAE.</span>
+                                    <strong
+                                        style="color:var(--navy); display:block; margin-bottom:6px; font-size:1.1rem; font-weight:800;">Pemilikan
+                                        Mutlak</strong>
+                                    <span
+                                        style="color:var(--text-secondary); font-size:0.95rem; line-height:1.6; display:block;">Anda
+                                        kekal 100% pemilik, hanya guna kebenaran lesen jenama AAE.</span>
                                 </div>
                             </li>
                             <li style="display:flex; gap:20px; align-items:flex-start;">
-                                <div style="width:48px; height:48px; border-radius:14px; background:rgba(16,185,129,0.1); color:#10b981; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                                <div
+                                    style="width:48px; height:48px; border-radius:14px; background:rgba(16,185,129,0.1); color:#10b981; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
                                     <span class="material-symbols-rounded">groups</span>
                                 </div>
                                 <div>
-                                    <strong style="color:var(--navy); display:block; margin-bottom:6px; font-size:1.1rem; font-weight:800;">Kumpulan Sasaran</strong>
-                                    <span style="color:var(--text-secondary); font-size:0.95rem; line-height:1.6; display:block;">Sesuai untuk pemilik bengkel sedia ada, pelabur baharu dan graduan TVET.</span>
+                                    <strong
+                                        style="color:var(--navy); display:block; margin-bottom:6px; font-size:1.1rem; font-weight:800;">Kumpulan
+                                        Sasaran</strong>
+                                    <span
+                                        style="color:var(--text-secondary); font-size:0.95rem; line-height:1.6; display:block;">Sesuai
+                                        untuk pemilik bengkel sedia ada, pelabur baharu dan graduan TVET.</span>
                                 </div>
                             </li>
                         </ul>
@@ -543,7 +601,8 @@
             </div>
         </section>
         <!-- ============ OBJEKTIF ============ -->
-        <section id="objektif" style="background: linear-gradient(180deg, white 0%, var(--surface) 100%); padding-top:120px;">
+        <section id="objektif"
+            style="background: linear-gradient(180deg, white 0%, var(--surface) 100%); padding-top:120px;">
             <div style="max-width:1280px;margin:0 auto;padding:0 32px;">
                 <div class="reveal" style="text-align:center;margin-bottom:80px;">
                     <h2
@@ -551,59 +610,98 @@
                         Objektif AAE</h2>
                     <p
                         style="margin-top:24px;color:var(--text-secondary);font-size:1.05rem;max-width:600px;margin-left:auto;margin-right:auto;line-height:1.8;">
-                        Bina legasi keusahawanan automotif yang berdaya saing di Kelantan dengan panduan profesional dan sokongan menyeluruh kami.</p>
+                        Bina legasi keusahawanan automotif yang berdaya saing dengan panduan profesional dan
+                        sokongan menyeluruh kami.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-[1200px] mx-auto">
                     <!-- Item 1 -->
                     <div class="card reveal" style="padding: 0;">
                         <div style="height: 200px; overflow: hidden; position: relative;">
-                            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=800&auto=format&fit=crop" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" alt="Jenama">
-                            <div style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, transparent 100%);"></div>
-                            <div style="position: absolute; bottom: 20px; left: 20px; font-family: 'Outfit', sans-serif; font-size: 3rem; font-weight: 900; color: rgba(255,255,255,0.8); line-height: 1;">01</div>
+                            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=800&auto=format&fit=crop"
+                                style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'" alt="Jenama">
+                            <div
+                                style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, transparent 100%);">
+                            </div>
+                            <div
+                                style="position: absolute; bottom: 20px; left: 20px; font-family: 'Outfit', sans-serif; font-size: 3rem; font-weight: 900; color: rgba(255,255,255,0.8); line-height: 1;">
+                                01</div>
                         </div>
                         <div style="padding: 30px;">
-                            <h3 style="font-size:1.3rem;font-weight:800;color:var(--navy);margin:0 0 12px;">Jenama lebih dikenali</h3>
-                            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">Tingkatkan profil perniagaan anda dengan bernaung di bawah jenama pakar yang dipercayai ramai.</p>
+                            <h3 style="font-size:1.3rem;font-weight:800;color:var(--navy);margin:0 0 12px;">Jenama lebih
+                                dikenali</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
+                                Tingkatkan profil perniagaan anda dengan bernaung di bawah jenama pakar yang dipercayai
+                                ramai.</p>
                         </div>
                     </div>
 
                     <!-- Item 2 -->
                     <div class="card reveal" style="padding: 0; transition-delay: 100ms;">
                         <div style="height: 200px; overflow: hidden; position: relative;">
-                            <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=800&auto=format&fit=crop" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" alt="OEM">
-                            <div style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, transparent 100%);"></div>
-                            <div style="position: absolute; bottom: 20px; left: 20px; font-family: 'Outfit', sans-serif; font-size: 3rem; font-weight: 900; color: rgba(255,255,255,0.8); line-height: 1;">02</div>
+                            <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=800&auto=format&fit=crop"
+                                style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'" alt="OEM">
+                            <div
+                                style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, transparent 100%);">
+                            </div>
+                            <div
+                                style="position: absolute; bottom: 20px; left: 20px; font-family: 'Outfit', sans-serif; font-size: 3rem; font-weight: 900; color: rgba(255,255,255,0.8); line-height: 1;">
+                                02</div>
                         </div>
                         <div style="padding: 30px;">
-                            <h3 style="font-size:1.3rem;font-weight:800;color:var(--navy);margin:0 0 12px;">Ke arah OEM standard</h3>
-                            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">Tawarkan perkhidmatan berprestasi tinggi yang setanding dengan pusat servis OEM.</p>
+                            <h3 style="font-size:1.3rem;font-weight:800;color:var(--navy);margin:0 0 12px;">Ke arah OEM
+                                standard</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
+                                Tawarkan perkhidmatan berprestasi tinggi yang setanding dengan pusat servis OEM.</p>
                         </div>
                     </div>
 
                     <!-- Item 3 -->
                     <div class="card reveal" style="padding: 0; transition-delay: 200ms;">
                         <div style="height: 200px; overflow: hidden; position: relative;">
-                            <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=800&auto=format&fit=crop" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" alt="Sistematik">
-                            <div style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, transparent 100%);"></div>
-                            <div style="position: absolute; bottom: 20px; left: 20px; font-family: 'Outfit', sans-serif; font-size: 3rem; font-weight: 900; color: rgba(255,255,255,0.8); line-height: 1;">03</div>
+                            <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=800&auto=format&fit=crop"
+                                style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'" alt="Sistematik">
+                            <div
+                                style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, transparent 100%);">
+                            </div>
+                            <div
+                                style="position: absolute; bottom: 20px; left: 20px; font-family: 'Outfit', sans-serif; font-size: 3rem; font-weight: 900; color: rgba(255,255,255,0.8); line-height: 1;">
+                                03</div>
                         </div>
                         <div style="padding: 30px;">
-                            <h3 style="font-size:1.3rem;font-weight:800;color:var(--navy);margin:0 0 12px;">Sistematik</h3>
-                            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">Gunakan sistem operasi bersepadu yang merangkumi pengurusan, teknikal dan khidmat pelanggan.</p>
+                            <h3 style="font-size:1.3rem;font-weight:800;color:var(--navy);margin:0 0 12px;">Sistematik
+                            </h3>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
+                                Gunakan sistem operasi bersepadu yang merangkumi pengurusan, teknikal dan khidmat
+                                pelanggan.</p>
                         </div>
                     </div>
 
                     <!-- Item 4 -->
                     <div class="card reveal" style="padding: 0; transition-delay: 300ms;">
                         <div style="height: 200px; overflow: hidden; position: relative;">
-                            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" alt="Pembangunan">
-                            <div style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, transparent 100%);"></div>
-                            <div style="position: absolute; bottom: 20px; left: 20px; font-family: 'Outfit', sans-serif; font-size: 3rem; font-weight: 900; color: rgba(255,255,255,0.8); line-height: 1;">04</div>
+                            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop"
+                                style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'" alt="Pembangunan">
+                            <div
+                                style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, transparent 100%);">
+                            </div>
+                            <div
+                                style="position: absolute; bottom: 20px; left: 20px; font-family: 'Outfit', sans-serif; font-size: 3rem; font-weight: 900; color: rgba(255,255,255,0.8); line-height: 1;">
+                                04</div>
                         </div>
                         <div style="padding: 30px;">
-                            <h3 style="font-size:1.3rem;font-weight:800;color:var(--navy);margin:0 0 12px;">Pembangunan Keusahawanan</h3>
-                            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">Jadi usahawan bengkel yang lebih matang, inovatif dan mampu bersaing dalam pasaran.</p>
+                            <h3 style="font-size:1.3rem;font-weight:800;color:var(--navy);margin:0 0 12px;">Pembangunan
+                                Keusahawanan</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0;">
+                                Jadi usahawan bengkel yang lebih matang, inovatif dan mampu bersaing dalam pasaran.</p>
                         </div>
                     </div>
                 </div>
@@ -611,10 +709,15 @@
         </section>
 
         <!-- ============ KATEGORI SASARAN ============ -->
-        <section id="sasaran" style="position: relative; background: var(--navy); padding-top:120px; padding-bottom:120px; color:white; overflow: hidden;">
+        <section id="sasaran"
+            style="position: relative; background: var(--navy); padding-top:120px; padding-bottom:120px; color:white; overflow: hidden;">
             <!-- Background Decoration -->
-            <div style="position: absolute; top: -100px; left: -100px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(245,197,24,0.15) 0%, transparent 70%); border-radius: 50%;"></div>
-            <div style="position: absolute; bottom: -100px; right: -100px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(154,0,14,0.2) 0%, transparent 70%); border-radius: 50%;"></div>
+            <div
+                style="position: absolute; top: -100px; left: -100px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(245,197,24,0.15) 0%, transparent 70%); border-radius: 50%;">
+            </div>
+            <div
+                style="position: absolute; bottom: -100px; right: -100px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(154,0,14,0.2) 0%, transparent 70%); border-radius: 50%;">
+            </div>
 
             <div style="max-width:1280px;margin:0 auto;padding:0 32px; position: relative; z-index: 2;">
                 <div class="reveal" style="text-align:center;margin-bottom:80px;">
@@ -623,28 +726,51 @@
                         Kategori Usahawan AAE</h2>
                     <p
                         style="margin-top:24px;color:rgba(255,255,255,0.7);font-size:1.05rem;max-width:600px;margin-left:auto;margin-right:auto;line-height:1.8;">
-                        Adakah anda salah seorang daripada mereka? Sertai kami sekarang dan tingkatkan potensi perniagaan anda.</p>
+                        Adakah anda salah seorang daripada mereka? Sertai kami sekarang dan tingkatkan potensi
+                        perniagaan anda.</p>
                 </div>
 
-                <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:32px; margin-top:40px;">
-                    
-                    <div class="reveal" style="position: relative; border-radius: 24px; overflow: hidden; height: 320px; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
-                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                        <div style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(11,31,58,0.95) 0%, rgba(11,31,58,0.4) 100%);"></div>
+                <div
+                    style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:32px; margin-top:40px;">
+
+                    <div class="reveal"
+                        style="position: relative; border-radius: 24px; overflow: hidden; height: 320px; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop"
+                            style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease;"
+                            onmouseover="this.style.transform='scale(1.05)'"
+                            onmouseout="this.style.transform='scale(1)'">
+                        <div
+                            style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(11,31,58,0.95) 0%, rgba(11,31,58,0.4) 100%);">
+                        </div>
                         <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 40px 32px;">
-                            <div style="display:inline-block; padding:6px 12px; background:linear-gradient(135deg, #f5c518, #f9d71c); color:var(--navy); font-weight:800; border-radius:8px; font-size:0.8rem; text-transform:uppercase; margin-bottom:16px;">Kategori Gold</div>
-                            <h3 style="font-size:1.5rem;font-weight:800;color:white;margin:0 0 12px;line-height:1.3;">Pemilik Bengkel<br>Sedia Ada</h3>
-                            <p style="color:rgba(255,255,255,0.8); font-size:0.9rem; line-height:1.6; margin:0;">Ubah wajah bengkel konvensional anda kepada standard pusat servis yang setaraf OEM.</p>
+                            <div
+                                style="display:inline-block; padding:6px 12px; background:linear-gradient(135deg, #f5c518, #f9d71c); color:var(--navy); font-weight:800; border-radius:8px; font-size:0.8rem; text-transform:uppercase; margin-bottom:16px;">
+                                Kategori Gold</div>
+                            <h3 style="font-size:1.5rem;font-weight:800;color:white;margin:0 0 12px;line-height:1.3;">
+                                Pemilik Bengkel<br>Sedia Ada</h3>
+                            <p style="color:rgba(255,255,255,0.8); font-size:0.9rem; line-height:1.6; margin:0;">Ubah
+                                wajah bengkel konvensional anda kepada standard pusat servis yang setaraf OEM.</p>
                         </div>
                     </div>
 
-                    <div class="reveal" style="position: relative; border-radius: 24px; overflow: hidden; height: 320px; box-shadow: 0 20px 40px rgba(0,0,0,0.3); transition-delay: 100ms;">
-                        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800&auto=format&fit=crop" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                        <div style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(11,31,58,0.95) 0%, rgba(11,31,58,0.4) 100%);"></div>
+                    <div class="reveal"
+                        style="position: relative; border-radius: 24px; overflow: hidden; height: 320px; box-shadow: 0 20px 40px rgba(0,0,0,0.3); transition-delay: 100ms;">
+                        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=800&auto=format&fit=crop"
+                            style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease;"
+                            onmouseover="this.style.transform='scale(1.05)'"
+                            onmouseout="this.style.transform='scale(1)'">
+                        <div
+                            style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(11,31,58,0.95) 0%, rgba(11,31,58,0.4) 100%);">
+                        </div>
                         <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 40px 32px;">
-                            <div style="display:inline-block; padding:6px 12px; background:linear-gradient(135deg, #e2e8f0, #f8fafc); color:var(--navy); font-weight:800; border-radius:8px; font-size:0.8rem; text-transform:uppercase; margin-bottom:16px;">Kategori Silver</div>
-                            <h3 style="font-size:1.5rem;font-weight:800;color:white;margin:0 0 12px;line-height:1.3;">Usahawan<br>Baru</h3>
-                            <p style="color:rgba(255,255,255,0.8); font-size:0.9rem; line-height:1.6; margin:0;">Dapatkan sokongan infrastruktur penuh untuk meminimumkan risiko permulaan perniagaan anda.</p>
+                            <div
+                                style="display:inline-block; padding:6px 12px; background:linear-gradient(135deg, #e2e8f0, #f8fafc); color:var(--navy); font-weight:800; border-radius:8px; font-size:0.8rem; text-transform:uppercase; margin-bottom:16px;">
+                                Kategori Silver</div>
+                            <h3 style="font-size:1.5rem;font-weight:800;color:white;margin:0 0 12px;line-height:1.3;">
+                                Usahawan<br>Baru</h3>
+                            <p style="color:rgba(255,255,255,0.8); font-size:0.9rem; line-height:1.6; margin:0;">
+                                Dapatkan sokongan infrastruktur penuh untuk meminimumkan risiko permulaan perniagaan
+                                anda.</p>
                         </div>
                     </div>
 
@@ -653,13 +779,19 @@
         </section>
 
         <!-- ============ BENEFITS ============ -->
-        <section id="kelebihan" style="background: url('https://images.unsplash.com/photo-1621252179027-94459d278660?q=80&w=1920&auto=format&fit=crop') center/cover fixed; padding-top:120px; padding-bottom:120px; position: relative;">
-            <div style="position: absolute; inset: 0; background: rgba(248, 250, 252, 0.93); backdrop-filter: blur(10px);"></div>
+        <section id="kelebihan"
+            style="background: url('https://images.unsplash.com/photo-1621252179027-94459d278660?q=80&w=1920&auto=format&fit=crop') center/cover fixed; padding-top:120px; padding-bottom:120px; position: relative;">
+            <div
+                style="position: absolute; inset: 0; background: rgba(248, 250, 252, 0.93); backdrop-filter: blur(10px);">
+            </div>
             <div style="max-width:1280px;margin:0 auto;padding:0 32px; position: relative; z-index: 2;">
-                <div class="reveal flex flex-col lg:flex-row justify-between items-start gap-8 mb-16 max-w-[1100px] mx-auto">
+                <div
+                    class="reveal flex flex-col lg:flex-row justify-between items-start gap-8 mb-16 max-w-[1100px] mx-auto">
                     <div class="max-w-xl text-left">
-                        <div class="section-label" style="justify-content:flex-start; background: rgba(0, 53, 95, 0.1);">
-                            <span class="material-symbols-rounded" style="font-size:1.1rem;color:var(--blue);">stars</span>
+                        <div class="section-label"
+                            style="justify-content:flex-start; background: rgba(0, 53, 95, 0.1);">
+                            <span class="material-symbols-rounded"
+                                style="font-size:1.1rem;color:var(--blue);">stars</span>
                             Kelebihan Kompetitif
                         </div>
                         <h2
@@ -673,149 +805,204 @@
 
                 <div style="max-width:1100px;margin:0 auto;">
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
-                        
+
                         <div class="bento reveal" style="padding: 28px;">
-                            <div style="width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg, rgba(0,53,95,0.1), rgba(0,53,95,0.02)); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                                <span class="material-symbols-rounded" style="font-size:2rem;color:var(--blue);">verified</span>
+                            <div
+                                style="width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg, rgba(0,53,95,0.1), rgba(0,53,95,0.02)); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                                <span class="material-symbols-rounded"
+                                    style="font-size:2rem;color:var(--blue);">verified</span>
                             </div>
-                            <h3 style="font-size:1.2rem;font-weight:800;color:var(--navy);margin:0 0 10px;">Penjenamaan Strategik</h3>
-                            <p style="color:var(--text-secondary);font-size:0.95rem;line-height:1.6;margin:0;">Hapuskan jurang kompetensi dan tingkatkan ekuiti pasaran. Pintas fasa pembinaan kepercayaan yang memakan masa bertahun-tahun.</p>
+                            <h3 style="font-size:1.2rem;font-weight:800;color:var(--navy);margin:0 0 10px;">Penjenamaan
+                                Strategik</h3>
+                            <p style="color:var(--text-secondary);font-size:0.95rem;line-height:1.6;margin:0;">Hapuskan
+                                jurang kompetensi dan tingkatkan ekuiti pasaran. Pintas fasa pembinaan kepercayaan yang
+                                memakan masa bertahun-tahun.</p>
                         </div>
-                        
+
                         <div class="bento reveal" style="padding: 28px; transition-delay: 50ms;">
-                            <div style="width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg, rgba(154,0,14,0.1), rgba(154,0,14,0.02)); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                                <span class="material-symbols-rounded" style="font-size:2rem;color:var(--red);">devices</span>
+                            <div
+                                style="width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg, rgba(154,0,14,0.1), rgba(154,0,14,0.02)); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                                <span class="material-symbols-rounded"
+                                    style="font-size:2rem;color:var(--red);">devices</span>
                             </div>
-                            <h3 style="font-size:1.2rem;font-weight:800;color:var(--navy);margin:0 0 10px;">Sistem Operasi Digital</h3>
-                            <p style="color:var(--text-secondary);font-size:0.95rem;line-height:1.6;margin:0;">Gunakan integrasi sistem Webmax dan MyXsel. Pantau data kewangan, jualan, perbelanjaan dan inventori anda secara masa nyata.</p>
+                            <h3 style="font-size:1.2rem;font-weight:800;color:var(--navy);margin:0 0 10px;">Sistem
+                                Operasi Digital</h3>
+                            <p style="color:var(--text-secondary);font-size:0.95rem;line-height:1.6;margin:0;">Gunakan
+                                integrasi sistem Webmax dan MyXsel. Pantau data kewangan, jualan, perbelanjaan dan
+                                inventori anda secara masa nyata.</p>
                         </div>
 
                         <div class="bento reveal" style="padding: 28px; transition-delay: 100ms;">
-                            <div style="width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg, rgba(0,53,95,0.1), rgba(0,53,95,0.02)); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                                <span class="material-symbols-rounded" style="font-size:2rem;color:var(--blue);">inventory_2</span>
+                            <div
+                                style="width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg, rgba(0,53,95,0.1), rgba(0,53,95,0.02)); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                                <span class="material-symbols-rounded"
+                                    style="font-size:2rem;color:var(--blue);">inventory_2</span>
                             </div>
-                            <h3 style="font-size:1.2rem;font-weight:800;color:var(--navy);margin:0 0 10px;">Rantaian Bekalan Konsisten</h3>
-                            <p style="color:var(--text-secondary);font-size:0.95rem;line-height:1.6;margin:0;">Dapatkan jaminan bekalan alat ganti berkualiti dan minyak enjin jenama sendiri (AZAMU & Lubrex) pada harga pemborong.</p>
+                            <h3 style="font-size:1.2rem;font-weight:800;color:var(--navy);margin:0 0 10px;">Rantaian
+                                Bekalan Konsisten</h3>
+                            <p style="color:var(--text-secondary);font-size:0.95rem;line-height:1.6;margin:0;">Dapatkan
+                                jaminan bekalan alat ganti berkualiti dan minyak enjin jenama sendiri (AZAMU & Lubrex)
+                                pada harga pemborong.</p>
                         </div>
 
                         <div class="bento reveal" style="padding: 28px; transition-delay: 150ms;">
-                            <div style="width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg, rgba(154,0,14,0.1), rgba(154,0,14,0.02)); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                                <span class="material-symbols-rounded" style="font-size:2rem;color:var(--red);">engineering</span>
+                            <div
+                                style="width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg, rgba(154,0,14,0.1), rgba(154,0,14,0.02)); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                                <span class="material-symbols-rounded"
+                                    style="font-size:2rem;color:var(--red);">engineering</span>
                             </div>
-                            <h3 style="font-size:1.2rem;font-weight:800;color:var(--navy);margin:0 0 10px;">Sokongan Teknikal & Latihan</h3>
-                            <p style="color:var(--text-secondary);font-size:0.95rem;line-height:1.6;margin:0;">Sertai latihan simulasi praktikal menggunakan peralatan diagnostik moden untuk pembaikan penyaman udara dan enjin.</p>
+                            <h3 style="font-size:1.2rem;font-weight:800;color:var(--navy);margin:0 0 10px;">Sokongan
+                                Teknikal & Latihan</h3>
+                            <p style="color:var(--text-secondary);font-size:0.95rem;line-height:1.6;margin:0;">Sertai
+                                latihan simulasi praktikal menggunakan peralatan diagnostik moden untuk pembaikan
+                                penyaman udara dan enjin.</p>
                         </div>
 
-                        <div class="bento reveal md:col-span-2 lg:col-span-1" style="padding: 28px; transition-delay: 200ms;">
-                            <div style="width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg, rgba(0,53,95,0.1), rgba(0,53,95,0.02)); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                                <span class="material-symbols-rounded" style="font-size:2rem;color:var(--blue);">campaign</span>
+                        <div class="bento reveal md:col-span-2 lg:col-span-1"
+                            style="padding: 28px; transition-delay: 200ms;">
+                            <div
+                                style="width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg, rgba(0,53,95,0.1), rgba(0,53,95,0.02)); display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                                <span class="material-symbols-rounded"
+                                    style="font-size:2rem;color:var(--blue);">campaign</span>
                             </div>
-                            <h3 style="font-size:1.2rem;font-weight:800;color:var(--navy);margin:0 0 10px;">Pemasaran Berpusat</h3>
-                            <p style="color:var(--text-secondary);font-size:0.95rem;line-height:1.6;margin:0;">Bina jenama dengan pemasaran berpusat berskala besar oleh HQ (termasuk FB/TikTok Ads & Live Promo) dengan hanya 5% caj A&P.</p>
+                            <h3 style="font-size:1.2rem;font-weight:800;color:var(--navy);margin:0 0 10px;">Pemasaran
+                                Berpusat</h3>
+                            <p style="color:var(--text-secondary);font-size:0.95rem;line-height:1.6;margin:0;">Bina
+                                jenama dengan pemasaran berpusat berskala besar oleh HQ (termasuk FB/TikTok Ads & Live
+                                Promo) dengan hanya 5% caj A&P.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-                <!-- ============ PROGRAM BOMP ============ -->
+        <!-- ============ PROGRAM BOMP ============ -->
         <section id="bomp" style="background:white;padding-top:96px;padding-bottom:96px;">
             <div style="max-width:1280px;margin:0 auto;padding:0 32px;">
                 <div class="reveal" style="text-align:center;margin-bottom:64px;">
-                    <h2 style="font-size:clamp(1.8rem,3.5vw,2.5rem);font-weight:800;color:var(--navy);margin:0 0 12px;letter-spacing:-0.02em;">
+                    <h2
+                        style="font-size:clamp(1.8rem,3.5vw,2.5rem);font-weight:800;color:var(--navy);margin:0 0 12px;letter-spacing:-0.02em;">
                         Brand Operating Monitoring Programme (BOMP)</h2>
                     <div class="divider"></div>
-                    <p style="margin-top:20px;color:var(--text-secondary);font-size:0.95rem;max-width:700px;margin-left:auto;margin-right:auto;line-height:1.7;">
-                        Gunakan Blueprint BOMP untuk menguasai pengurusan operasi, teknikal, dan pentadbiran bengkel anda. 100% pemilikan perniagaan kekal milik anda.</p>
+                    <p
+                        style="margin-top:20px;color:var(--text-secondary);font-size:0.95rem;max-width:700px;margin-left:auto;margin-right:auto;line-height:1.7;">
+                        Gunakan Blueprint BOMP untuk menguasai pengurusan operasi, teknikal, dan pentadbiran bengkel
+                        anda. 100% pemilikan perniagaan kekal milik anda.</p>
                 </div>
 
                 <!-- Interactive BOMP Cards -->
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
                     <!-- Card 1: Proposisi Nilai -->
-                    <div class="reveal group relative bg-white rounded-2xl p-10 border border-gray-200 hover:border-[var(--navy)] transition-colors duration-300 cursor-pointer flex flex-col h-full" onclick="openBompModal('modal-proposisi')">
+                    <div class="reveal group relative bg-white rounded-2xl p-10 border border-gray-200 hover:border-[var(--navy)] transition-colors duration-300 cursor-pointer flex flex-col h-full"
+                        onclick="openBompModal('modal-proposisi')">
                         <div class="mb-12 text-[var(--navy)]">
                             <span class="material-symbols-rounded text-4xl">diamond</span>
                         </div>
                         <div class="mt-auto">
                             <h3 class="text-2xl font-bold text-[var(--navy)] mb-3 tracking-tight">Proposisi Nilai</h3>
-                            <p class="text-gray-500 text-sm leading-relaxed mb-8">SOP bertaraf OEM, ekosistem digital terpusat, rantaian bekalan Lubrex, dan pemasaran strategik.</p>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-8">SOP bertaraf OEM, ekosistem digital
+                                terpusat, rantaian bekalan Lubrex, dan pemasaran strategik.</p>
                             <div class="inline-flex items-center gap-2 text-sm font-bold text-[var(--navy)]">
-                                Butiran Lanjut <span class="material-symbols-rounded text-base transition-transform group-hover:translate-x-1">arrow_forward</span>
+                                Butiran Lanjut <span
+                                    class="material-symbols-rounded text-base transition-transform group-hover:translate-x-1">arrow_forward</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card 2: Struktur Modal & Kewangan -->
-                    <div class="reveal group relative bg-white rounded-2xl p-10 border border-gray-200 hover:border-[var(--navy)] transition-colors duration-300 cursor-pointer flex flex-col h-full" style="transition-delay: 100ms;" onclick="openBompModal('modal-kewangan')">
+                    <div class="reveal group relative bg-white rounded-2xl p-10 border border-gray-200 hover:border-[var(--navy)] transition-colors duration-300 cursor-pointer flex flex-col h-full"
+                        style="transition-delay: 100ms;" onclick="openBompModal('modal-kewangan')">
                         <div class="mb-12 text-[var(--navy)]">
                             <span class="material-symbols-rounded text-4xl">account_balance</span>
                         </div>
                         <div class="mt-auto">
                             <h3 class="text-2xl font-bold text-[var(--navy)] mb-3 tracking-tight">Struktur Modal</h3>
-                            <p class="text-gray-500 text-sm leading-relaxed mb-8">Pecahan unjuran pelaburan untuk Brand Outlet mengikut kategori pendaftaran Silver dan Gold.</p>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-8">Pecahan unjuran pelaburan untuk Brand
+                                Outlet mengikut kategori pendaftaran Silver dan Gold.</p>
                             <div class="inline-flex items-center gap-2 text-sm font-bold text-[var(--navy)]">
-                                Butiran Lanjut <span class="material-symbols-rounded text-base transition-transform group-hover:translate-x-1">arrow_forward</span>
+                                Butiran Lanjut <span
+                                    class="material-symbols-rounded text-base transition-transform group-hover:translate-x-1">arrow_forward</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card 3: Obligasi Perundangan -->
-                    <div class="reveal group relative bg-white rounded-2xl p-10 border border-gray-200 hover:border-[var(--navy)] transition-colors duration-300 cursor-pointer flex flex-col h-full" style="transition-delay: 200ms;" onclick="openBompModal('modal-obligasi')">
+                    <div class="reveal group relative bg-white rounded-2xl p-10 border border-gray-200 hover:border-[var(--navy)] transition-colors duration-300 cursor-pointer flex flex-col h-full"
+                        style="transition-delay: 200ms;" onclick="openBompModal('modal-obligasi')">
                         <div class="mb-12 text-[var(--navy)]">
                             <span class="material-symbols-rounded text-4xl">gavel</span>
                         </div>
                         <div class="mt-auto">
-                            <h3 class="text-2xl font-bold text-[var(--navy)] mb-3 tracking-tight">Obligasi Perundangan</h3>
-                            <p class="text-gray-500 text-sm leading-relaxed mb-8">Syarat kontrak perjanjian, pematuhan imej korporat (CI), dan terma bekalan eksklusif HQ.</p>
+                            <h3 class="text-2xl font-bold text-[var(--navy)] mb-3 tracking-tight">Obligasi Perundangan
+                            </h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-8">Syarat kontrak perjanjian, pematuhan
+                                imej korporat (CI), dan terma bekalan eksklusif HQ.</p>
                             <div class="inline-flex items-center gap-2 text-sm font-bold text-[var(--navy)]">
-                                Butiran Lanjut <span class="material-symbols-rounded text-base transition-transform group-hover:translate-x-1">arrow_forward</span>
+                                Butiran Lanjut <span
+                                    class="material-symbols-rounded text-base transition-transform group-hover:translate-x-1">arrow_forward</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- 3. Pelan Tindakan -->
-                <div class="reveal bg-[var(--navy)] rounded-3xl overflow-hidden p-10 md:p-16 mb-8 border border-[var(--gold)]/20">
+                <div
+                    class="reveal bg-[var(--navy)] rounded-3xl overflow-hidden p-10 md:p-16 mb-8 border border-[var(--gold)]/20">
                     <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 mb-16">
                         <div class="max-w-2xl">
-                            <h3 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-4">Pelan Tindakan</h3>
-                            <p class="text-gray-400 text-lg m-0">Sasaran pelaksanaan penuh dalam tempoh <strong class="text-[var(--gold)] font-medium">60 – 75 hari</strong>.</p>
+                            <h3 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-4">Pelan Tindakan
+                            </h3>
+                            <p class="text-gray-400 text-lg m-0">Sasaran pelaksanaan penuh dalam tempoh <strong
+                                    class="text-[var(--gold)] font-medium">60 – 75 hari</strong>.</p>
                         </div>
-                        <div class="w-16 h-16 rounded-full border border-[var(--gold)]/30 text-[var(--gold)] flex items-center justify-center shrink-0">
+                        <div
+                            class="w-16 h-16 rounded-full border border-[var(--gold)]/30 text-[var(--gold)] flex items-center justify-center shrink-0">
                             <span class="material-symbols-rounded text-2xl">arrow_downward</span>
                         </div>
                     </div>
-                    
+
                     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 border-t border-[var(--gold)]/20">
                         <!-- Step 1 -->
-                        <div class="pt-8 pb-12 xl:pr-10 border-b xl:border-b-0 xl:border-r border-[var(--gold)]/20 group cursor-default">
-                            <span class="text-6xl font-light text-white/20 group-hover:text-[var(--gold)] transition-colors duration-500">01</span>
-                            <h4 class="text-xl text-white font-bold leading-tight mt-8 mb-3">Dokumentasi & Kelayakan</h4>
-                            <p class="text-sm text-gray-400 leading-relaxed m-0">Penyerahan borang permohonan, dokumen SSM, dan rekod kewangan untuk audit awal.</p>
+                        <div
+                            class="pt-8 pb-12 xl:pr-10 border-b xl:border-b-0 xl:border-r border-[var(--gold)]/20 group cursor-default">
+                            <span
+                                class="text-6xl font-light text-white/20 group-hover:text-[var(--gold)] transition-colors duration-500">01</span>
+                            <h4 class="text-xl text-white font-bold leading-tight mt-8 mb-3">Dokumentasi & Kelayakan
+                            </h4>
+                            <p class="text-sm text-gray-400 leading-relaxed m-0">Penyerahan borang permohonan, dokumen
+                                SSM, dan rekod kewangan untuk audit awal.</p>
                         </div>
                         <!-- Step 2 -->
-                        <div class="pt-8 pb-12 xl:px-10 border-b xl:border-b-0 xl:border-r border-[var(--gold)]/20 group cursor-default">
-                            <span class="text-6xl font-light text-white/20 group-hover:text-[var(--gold)] transition-colors duration-500">02</span>
+                        <div
+                            class="pt-8 pb-12 xl:px-10 border-b xl:border-b-0 xl:border-r border-[var(--gold)]/20 group cursor-default">
+                            <span
+                                class="text-6xl font-light text-white/20 group-hover:text-[var(--gold)] transition-colors duration-500">02</span>
                             <h4 class="text-xl text-white font-bold leading-tight mt-8 mb-3">Temuduga Strategik</h4>
-                            <p class="text-sm text-gray-400 leading-relaxed m-0">Penilaian visi usahawan dan kelulusan lokasi. Bantuan kertas kerja disediakan jika layak.</p>
+                            <p class="text-sm text-gray-400 leading-relaxed m-0">Penilaian visi usahawan dan kelulusan
+                                lokasi. Bantuan kertas kerja disediakan jika layak.</p>
                         </div>
                         <!-- Step 3 -->
-                        <div class="pt-8 pb-12 xl:px-10 border-b xl:border-b-0 xl:border-r border-[var(--gold)]/20 group cursor-default">
-                            <span class="text-6xl font-light text-white/20 group-hover:text-[var(--gold)] transition-colors duration-500">03</span>
-                            <h4 class="text-xl text-white font-bold leading-tight mt-8 mb-3">Pengesahan & Perjanjian</h4>
-                            <p class="text-sm text-gray-400 leading-relaxed m-0">Menandatangani dokumen perjanjian AAE secara legal dan profesional.</p>
+                        <div
+                            class="pt-8 pb-12 xl:px-10 border-b xl:border-b-0 xl:border-r border-[var(--gold)]/20 group cursor-default">
+                            <span
+                                class="text-6xl font-light text-white/20 group-hover:text-[var(--gold)] transition-colors duration-500">03</span>
+                            <h4 class="text-xl text-white font-bold leading-tight mt-8 mb-3">Pengesahan & Perjanjian
+                            </h4>
+                            <p class="text-sm text-gray-400 leading-relaxed m-0">Menandatangani dokumen perjanjian AAE
+                                secara legal dan profesional.</p>
                         </div>
                         <!-- Step 4 -->
                         <div class="pt-8 pb-12 xl:pl-10 group cursor-default">
                             <span class="text-6xl font-light text-[var(--gold)]">04</span>
                             <h4 class="text-xl text-white font-bold leading-tight mt-8 mb-3">Pembangunan & Operasi</h4>
-                            <p class="text-sm text-gray-400 leading-relaxed m-0">Pembangunan premis mengikut Outlook korporat dan mula beroperasi dengan sokongan HQ.</p>
+                            <p class="text-sm text-gray-400 leading-relaxed m-0">Pembangunan premis mengikut Outlook
+                                korporat dan mula beroperasi dengan sokongan HQ.</p>
                         </div>
                     </div>
                 </div>
 
             </div>
-        </section>        <!-- ============ LOCATIONS ============ -->
+        </section> <!-- ============ LOCATIONS ============ -->
         <section id="locations" style="background:white;padding-top:100px;">
             <div style="max-width:1280px;margin:0 auto;padding:0 32px;">
                 <div class="reveal" style="text-align:center;margin-bottom:64px;">
@@ -929,8 +1116,8 @@
                             <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                         </svg>
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=60123741726&text=Saya%20berminat%20tentang%20AAE" target="_blank"
-                        rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp">
+                    <a href="https://api.whatsapp.com/send?phone=60123741726&text=Saya%20berminat%20tentang%20AAE"
+                        target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp">
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
                             <path
                                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
@@ -958,7 +1145,9 @@
                                 d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.23h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.83a16 16 0 0 0 6.29 6.29l.95-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
                         </svg>
                         <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
-                            <a href="https://api.whatsapp.com/send?phone=60123741726&text=Saya%20berminat%20tentang%20AAE">+60 12-374 1726</a>
+                            <a
+                                href="https://api.whatsapp.com/send?phone=60123741726&text=Saya%20berminat%20tentang%20AAE">+60
+                                12-374 1726</a>
                         </div>
                     </div>
                     <div class="contact-row">
@@ -1020,7 +1209,7 @@
             mobileNavLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     mobileMenu.classList.add('hidden');
-                    if(mobileMenuBtn.querySelector('.material-symbols-rounded')) {
+                    if (mobileMenuBtn.querySelector('.material-symbols-rounded')) {
                         mobileMenuBtn.querySelector('.material-symbols-rounded').textContent = 'menu';
                     }
                 });
@@ -1065,162 +1254,196 @@
     </script>
 
     <!-- Poster Modal -->
-    <div id="poster-modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.85); z-index:9999; align-items:center; justify-content:center; padding:32px; backdrop-filter:blur(8px);" onclick="this.style.display='none'">
+    <div id="poster-modal"
+        style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.85); z-index:9999; align-items:center; justify-content:center; padding:32px; backdrop-filter:blur(8px);"
+        onclick="this.style.display='none'">
         <div style="position:relative; max-width:90vh; max-height:90vh;">
-            <span style="position:absolute; top:-40px; right:0; color:white; font-size:2.5rem; cursor:pointer; font-weight:bold; line-height:1;">&times;</span>
-            <img src="assets/aae-poster.png" alt="AAE Poster Full" style="max-width:100%; max-height:90vh; border-radius:12px; box-shadow:0 20px 50px rgba(0,0,0,0.5);" onclick="event.stopPropagation()">
+            <span
+                style="position:absolute; top:-40px; right:0; color:white; font-size:2.5rem; cursor:pointer; font-weight:bold; line-height:1;">&times;</span>
+            <img src="assets/aae-poster.png" alt="AAE Poster Full"
+                style="max-width:100%; max-height:90vh; border-radius:12px; box-shadow:0 20px 50px rgba(0,0,0,0.5);"
+                onclick="event.stopPropagation()">
         </div>
     </div>
 
-<!-- ============ BOMP MODALS ============ -->
-<!-- Proposisi Nilai Modal -->
-<div id="modal-proposisi" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 sm:p-6">
-    <div class="absolute inset-0 bg-[#081525]/90 backdrop-blur-md transition-opacity" onclick="closeBompModal('modal-proposisi')"></div>
-    <div class="relative w-full max-w-4xl max-h-[90vh] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-[fade-in-up_0.3s_ease-out]">
-        <div class="flex justify-between items-center p-6 md:px-10 md:pt-10 md:pb-6">
-            <h2 class="text-3xl font-black text-[var(--navy)] tracking-tight">Proposisi Nilai AAE</h2>
-            <button onclick="closeBompModal('modal-proposisi')" class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-[var(--navy)] transition-colors">
-                <span class="material-symbols-rounded">close</span>
-            </button>
-        </div>
-        <div class="p-6 md:px-10 md:pb-10 overflow-y-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 border-t border-l border-gray-200">
-                <div class="p-8 border-b border-r border-gray-200 bg-gray-50/50">
-                    <span class="material-symbols-rounded text-3xl text-[var(--gold)] mb-4 block">gavel</span>
-                    <h4 class="font-bold text-xl text-[var(--navy)] mb-2">SOP Bertaraf OEM</h4>
-                    <p class="text-gray-500 text-sm leading-relaxed m-0">Proses diseragamkan dari check-in hingga check-out untuk memastikan kualiti kerja sentiasa konsisten dan memuaskan hati pelanggan.</p>
-                </div>
-                <div class="p-8 border-b border-r border-gray-200 bg-gray-50/50">
-                    <span class="material-symbols-rounded text-3xl text-[var(--gold)] mb-4 block">devices</span>
-                    <h4 class="font-bold text-xl text-[var(--navy)] mb-2">Ekosistem Digital</h4>
-                    <p class="text-gray-500 text-sm leading-relaxed m-0">Merangkumi Webmax CRM untuk pengurusan Jualan, Pembelian, Stok, Kewangan & Payroll secara bersepadu.</p>
-                </div>
-                <div class="p-8 border-b border-r border-gray-200 bg-gray-50/50">
-                    <span class="material-symbols-rounded text-3xl text-[var(--gold)] mb-4 block">local_shipping</span>
-                    <h4 class="font-bold text-xl text-[var(--navy)] mb-2">Rantaian Bekalan</h4>
-                    <p class="text-gray-500 text-sm leading-relaxed m-0">Nikmati harga pemborong eksklusif untuk alat ganti penghawa dingin berkualiti & minyak pelincir berjenama Lubrex.</p>
-                </div>
-                <div class="p-8 border-b border-r border-gray-200 bg-gray-50/50">
-                    <span class="material-symbols-rounded text-3xl text-[var(--gold)] mb-4 block">campaign</span>
-                    <h4 class="font-bold text-xl text-[var(--navy)] mb-2">Pemasaran Berpusat</h4>
-                    <p class="text-gray-500 text-sm leading-relaxed m-0">HQ kendalikan kempen pemasaran berskala besar (TikTok, FB Ads) & bekalkan material promosi sedia ada untuk cawangan anda.</p>
-                </div>
+    <!-- ============ BOMP MODALS ============ -->
+    <!-- Proposisi Nilai Modal -->
+    <div id="modal-proposisi" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 sm:p-6">
+        <div class="absolute inset-0 bg-[#081525]/90 backdrop-blur-md transition-opacity"
+            onclick="closeBompModal('modal-proposisi')"></div>
+        <div
+            class="relative w-full max-w-4xl max-h-[90vh] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-[fade-in-up_0.3s_ease-out]">
+            <div class="flex justify-between items-center p-6 md:px-10 md:pt-10 md:pb-6">
+                <h2 class="text-3xl font-black text-[var(--navy)] tracking-tight">Proposisi Nilai AAE</h2>
+                <button onclick="closeBompModal('modal-proposisi')"
+                    class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-[var(--navy)] transition-colors">
+                    <span class="material-symbols-rounded">close</span>
+                </button>
             </div>
-        </div>
-    </div>
-</div>
-
-<!-- Kewangan Modal -->
-<div id="modal-kewangan" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 sm:p-6">
-    <div class="absolute inset-0 bg-[#081525]/90 backdrop-blur-md transition-opacity" onclick="closeBompModal('modal-kewangan')"></div>
-    <div class="relative w-full max-w-3xl max-h-[90vh] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-[fade-in-up_0.3s_ease-out]">
-        <div class="flex justify-between items-center p-6 md:px-10 md:pt-10 md:pb-6 border-b border-gray-100">
-            <h2 class="text-3xl font-black text-[var(--navy)] tracking-tight">Struktur Modal</h2>
-            <button onclick="closeBompModal('modal-kewangan')" class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-[var(--navy)] transition-colors">
-                <span class="material-symbols-rounded">close</span>
-            </button>
-        </div>
-        <div class="p-6 md:p-10 overflow-y-auto">
-            <p class="text-gray-500 mb-8 text-base leading-relaxed">Bagi satu Brand Outlet, anggaran kasar kos penyertaan (Kategori Silver) adalah sebanyak <strong>RM150,000.00</strong>. Pecahan utiliti pelaburan adalah seperti berikut:</p>
-            
-            <div class="border-t border-gray-200 mb-8">
-                <div class="flex justify-between py-4 border-b border-gray-100">
-                    <span class="text-gray-600">Branding Fees (Papan Tanda & Latihan)</span>
-                    <span class="font-mono text-[var(--navy)] font-bold">RM 20,000</span>
-                </div>
-                <div class="flex justify-between py-4 border-b border-gray-100">
-                    <span class="text-gray-600">Modal Pusingan (Working Capital)</span>
-                    <span class="font-mono text-[var(--navy)] font-bold">RM 30,000</span>
-                </div>
-                <div class="flex justify-between py-4 border-b border-gray-100">
-                    <span class="text-gray-600">Mesin & Peralatan</span>
-                    <span class="font-mono text-[var(--navy)] font-bold">RM 60,000</span>
-                </div>
-                <div class="flex justify-between py-4 border-b border-gray-100">
-                    <span class="text-gray-600">Kos Pembangunan / Renovasi</span>
-                    <span class="font-mono text-[var(--navy)] font-bold">RM 15,000</span>
-                </div>
-                <div class="flex justify-between py-4 border-b border-gray-100">
-                    <span class="text-gray-600">Pembelian Stok Awalan & Sistem</span>
-                    <span class="font-mono text-[var(--navy)] font-bold">RM 13,000</span>
-                </div>
-                <div class="flex justify-between py-4 border-b border-gray-100">
-                    <span class="text-gray-600">Pentadbiran & Pengurusan</span>
-                    <span class="font-mono text-[var(--navy)] font-bold">RM 12,000</span>
-                </div>
-                <div class="flex justify-between py-6 bg-gray-50 px-4 -mx-4">
-                    <span class="font-bold text-[var(--navy)] uppercase tracking-wider text-sm">Jumlah Keseluruhan</span>
-                    <span class="font-mono font-black text-2xl text-[var(--gold)]">RM 150,000</span>
-                </div>
-            </div>
-            
-            <div class="bg-[var(--navy)] text-white p-6 rounded-xl text-sm leading-relaxed">
-                <strong class="block mb-2 text-[var(--gold)]">Nota:</strong>
-                Kos anggaran kasar bagi <strong class="text-white">Kategori Gold</strong> (Usahawan bengkel sedia ada) adalah lebih rendah, iaitu di antara <strong>RM50,000 – RM80,000</strong> bergantung kepada keadaan premis dan peralatan sedia ada.
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Obligasi Modal -->
-<div id="modal-obligasi" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 sm:p-6">
-    <div class="absolute inset-0 bg-[#081525]/90 backdrop-blur-md transition-opacity" onclick="closeBompModal('modal-obligasi')"></div>
-    <div class="relative w-full max-w-3xl max-h-[90vh] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-[fade-in-up_0.3s_ease-out]">
-        <div class="flex justify-between items-center p-6 md:px-10 md:pt-10 md:pb-6 border-b border-gray-100">
-            <h2 class="text-3xl font-black text-[var(--navy)] tracking-tight">Obligasi Perundangan</h2>
-            <button onclick="closeBompModal('modal-obligasi')" class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-[var(--navy)] transition-colors">
-                <span class="material-symbols-rounded">close</span>
-            </button>
-        </div>
-        <div class="p-6 md:p-10 overflow-y-auto">
-            <div class="space-y-8 max-w-2xl">
-                <div class="flex gap-6 items-start">
-                    <div class="text-3xl font-light text-gray-300 w-8 shrink-0 pt-1">01</div>
-                    <div>
-                        <strong class="text-[var(--navy)] text-lg block mb-1">Tempoh Kontrak Perjanjian</strong>
-                        <p class="text-gray-500 text-sm leading-relaxed m-0">Ikat janji untuk 5 Tahun pertama dengan +2 Tahun pilihan bersyarat untuk pembaharuan kontrak sekiranya mengekalkan prestasi yang baik.</p>
+            <div class="p-6 md:px-10 md:pb-10 overflow-y-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 border-t border-l border-gray-200">
+                    <div class="p-8 border-b border-r border-gray-200 bg-gray-50/50">
+                        <span class="material-symbols-rounded text-3xl text-[var(--gold)] mb-4 block">gavel</span>
+                        <h4 class="font-bold text-xl text-[var(--navy)] mb-2">SOP Bertaraf OEM</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed m-0">Proses diseragamkan dari check-in hingga
+                            check-out untuk memastikan kualiti kerja sentiasa konsisten dan memuaskan hati pelanggan.
+                        </p>
                     </div>
-                </div>
-                <div class="w-full h-px bg-gray-100 ml-14"></div>
-                <div class="flex gap-6 items-start">
-                    <div class="text-3xl font-light text-gray-300 w-8 shrink-0 pt-1">02</div>
-                    <div>
-                        <strong class="text-[var(--navy)] text-lg block mb-1">Caj Advertising & Promotion (A&P)</strong>
-                        <p class="text-gray-500 text-sm leading-relaxed m-0">5% daripada hasil jualan kasar bulanan akan ditolak untuk tujuan dana kempen pemasaran berpusat yang dikendalikan sepenuhnya oleh Ibu Pejabat (HQ).</p>
+                    <div class="p-8 border-b border-r border-gray-200 bg-gray-50/50">
+                        <span class="material-symbols-rounded text-3xl text-[var(--gold)] mb-4 block">devices</span>
+                        <h4 class="font-bold text-xl text-[var(--navy)] mb-2">Ekosistem Digital</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed m-0">Merangkumi Webmax CRM untuk pengurusan
+                            Jualan, Pembelian, Stok, Kewangan & Payroll secara bersepadu.</p>
                     </div>
-                </div>
-                <div class="w-full h-px bg-gray-100 ml-14"></div>
-                <div class="flex gap-6 items-start">
-                    <div class="text-3xl font-light text-gray-300 w-8 shrink-0 pt-1">03</div>
-                    <div>
-                        <strong class="text-[var(--navy)] text-lg block mb-1">Bekalan Stok Eksklusif</strong>
-                        <p class="text-gray-500 text-sm leading-relaxed m-0">Pewajiban untuk mendapatkan sumber bekalan minyak pelincir (Lubrex) dan alat ganti penyaman udara secara eksklusif daripada vendor Ibu Pejabat secara terma tunai.</p>
+                    <div class="p-8 border-b border-r border-gray-200 bg-gray-50/50">
+                        <span
+                            class="material-symbols-rounded text-3xl text-[var(--gold)] mb-4 block">local_shipping</span>
+                        <h4 class="font-bold text-xl text-[var(--navy)] mb-2">Rantaian Bekalan</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed m-0">Nikmati harga pemborong eksklusif untuk
+                            alat ganti penghawa dingin berkualiti & minyak pelincir berjenama Lubrex.</p>
                     </div>
-                </div>
-                <div class="w-full h-px bg-gray-100 ml-14"></div>
-                <div class="flex gap-6 items-start">
-                    <div class="text-3xl font-light text-gray-300 w-8 shrink-0 pt-1">04</div>
-                    <div>
-                        <strong class="text-[var(--navy)] text-lg block mb-1">Pematuhan Imej Korporat (CI)</strong>
-                        <p class="text-gray-500 text-sm leading-relaxed m-0">Pematuhan ketat ke atas standard susun atur bengkel, rekaan papan tanda (fasad), keselesaan ruang menunggu, dan pemakaian seragam pekerja untuk imej yang seragam.</p>
+                    <div class="p-8 border-b border-r border-gray-200 bg-gray-50/50">
+                        <span class="material-symbols-rounded text-3xl text-[var(--gold)] mb-4 block">campaign</span>
+                        <h4 class="font-bold text-xl text-[var(--navy)] mb-2">Pemasaran Berpusat</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed m-0">HQ kendalikan kempen pemasaran berskala
+                            besar (TikTok, FB Ads) & bekalkan material promosi sedia ada untuk cawangan anda.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Modal Control Script -->
-<script>
-    function openBompModal(id) {
-        document.getElementById(id).classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
-    }
-    function closeBompModal(id) {
-        document.getElementById(id).classList.add('hidden');
-        document.body.style.overflow = '';
-    }
-</script>
+    <!-- Kewangan Modal -->
+    <div id="modal-kewangan" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 sm:p-6">
+        <div class="absolute inset-0 bg-[#081525]/90 backdrop-blur-md transition-opacity"
+            onclick="closeBompModal('modal-kewangan')"></div>
+        <div
+            class="relative w-full max-w-3xl max-h-[90vh] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-[fade-in-up_0.3s_ease-out]">
+            <div class="flex justify-between items-center p-6 md:px-10 md:pt-10 md:pb-6 border-b border-gray-100">
+                <h2 class="text-3xl font-black text-[var(--navy)] tracking-tight">Struktur Modal</h2>
+                <button onclick="closeBompModal('modal-kewangan')"
+                    class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-[var(--navy)] transition-colors">
+                    <span class="material-symbols-rounded">close</span>
+                </button>
+            </div>
+            <div class="p-6 md:p-10 overflow-y-auto">
+                <p class="text-gray-500 mb-8 text-base leading-relaxed">Bagi satu Brand Outlet, anggaran kasar kos
+                    penyertaan (Kategori Silver) adalah sebanyak <strong>RM150,000.00</strong>. Pecahan utiliti
+                    pelaburan adalah seperti berikut:</p>
+
+                <div class="border-t border-gray-200 mb-8">
+                    <div class="flex justify-between py-4 border-b border-gray-100">
+                        <span class="text-gray-600">Branding Fees (Papan Tanda & Latihan)</span>
+                        <span class="font-mono text-[var(--navy)] font-bold">RM 20,000</span>
+                    </div>
+                    <div class="flex justify-between py-4 border-b border-gray-100">
+                        <span class="text-gray-600">Modal Pusingan (Working Capital)</span>
+                        <span class="font-mono text-[var(--navy)] font-bold">RM 30,000</span>
+                    </div>
+                    <div class="flex justify-between py-4 border-b border-gray-100">
+                        <span class="text-gray-600">Mesin & Peralatan</span>
+                        <span class="font-mono text-[var(--navy)] font-bold">RM 60,000</span>
+                    </div>
+                    <div class="flex justify-between py-4 border-b border-gray-100">
+                        <span class="text-gray-600">Kos Pembangunan / Renovasi</span>
+                        <span class="font-mono text-[var(--navy)] font-bold">RM 15,000</span>
+                    </div>
+                    <div class="flex justify-between py-4 border-b border-gray-100">
+                        <span class="text-gray-600">Pembelian Stok Awalan & Sistem</span>
+                        <span class="font-mono text-[var(--navy)] font-bold">RM 13,000</span>
+                    </div>
+                    <div class="flex justify-between py-4 border-b border-gray-100">
+                        <span class="text-gray-600">Pentadbiran & Pengurusan</span>
+                        <span class="font-mono text-[var(--navy)] font-bold">RM 12,000</span>
+                    </div>
+                    <div class="flex justify-between py-6 bg-gray-50 px-4 -mx-4">
+                        <span class="font-bold text-[var(--navy)] uppercase tracking-wider text-sm">Jumlah
+                            Keseluruhan</span>
+                        <span class="font-mono font-black text-2xl text-[var(--gold)]">RM 150,000</span>
+                    </div>
+                </div>
+
+                <div class="bg-[var(--navy)] text-white p-6 rounded-xl text-sm leading-relaxed">
+                    <strong class="block mb-2 text-[var(--gold)]">Nota:</strong>
+                    Kos anggaran kasar bagi <strong class="text-white">Kategori Gold</strong> (Usahawan bengkel sedia
+                    ada) adalah lebih rendah, iaitu di antara <strong>RM50,000 – RM80,000</strong> bergantung kepada
+                    keadaan premis dan peralatan sedia ada.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Obligasi Modal -->
+    <div id="modal-obligasi" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 sm:p-6">
+        <div class="absolute inset-0 bg-[#081525]/90 backdrop-blur-md transition-opacity"
+            onclick="closeBompModal('modal-obligasi')"></div>
+        <div
+            class="relative w-full max-w-3xl max-h-[90vh] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-[fade-in-up_0.3s_ease-out]">
+            <div class="flex justify-between items-center p-6 md:px-10 md:pt-10 md:pb-6 border-b border-gray-100">
+                <h2 class="text-3xl font-black text-[var(--navy)] tracking-tight">Obligasi Perundangan</h2>
+                <button onclick="closeBompModal('modal-obligasi')"
+                    class="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-[var(--navy)] transition-colors">
+                    <span class="material-symbols-rounded">close</span>
+                </button>
+            </div>
+            <div class="p-6 md:p-10 overflow-y-auto">
+                <div class="space-y-8 max-w-2xl">
+                    <div class="flex gap-6 items-start">
+                        <div class="text-3xl font-light text-gray-300 w-8 shrink-0 pt-1">01</div>
+                        <div>
+                            <strong class="text-[var(--navy)] text-lg block mb-1">Tempoh Kontrak Perjanjian</strong>
+                            <p class="text-gray-500 text-sm leading-relaxed m-0">Ikat janji untuk 5 Tahun pertama dengan
+                                +2 Tahun pilihan bersyarat untuk pembaharuan kontrak sekiranya mengekalkan prestasi yang
+                                baik.</p>
+                        </div>
+                    </div>
+                    <div class="w-full h-px bg-gray-100 ml-14"></div>
+                    <div class="flex gap-6 items-start">
+                        <div class="text-3xl font-light text-gray-300 w-8 shrink-0 pt-1">02</div>
+                        <div>
+                            <strong class="text-[var(--navy)] text-lg block mb-1">Caj Advertising & Promotion
+                                (A&P)</strong>
+                            <p class="text-gray-500 text-sm leading-relaxed m-0">5% daripada hasil jualan kasar bulanan
+                                akan ditolak untuk tujuan dana kempen pemasaran berpusat yang dikendalikan sepenuhnya
+                                oleh Ibu Pejabat (HQ).</p>
+                        </div>
+                    </div>
+                    <div class="w-full h-px bg-gray-100 ml-14"></div>
+                    <div class="flex gap-6 items-start">
+                        <div class="text-3xl font-light text-gray-300 w-8 shrink-0 pt-1">03</div>
+                        <div>
+                            <strong class="text-[var(--navy)] text-lg block mb-1">Bekalan Stok Eksklusif</strong>
+                            <p class="text-gray-500 text-sm leading-relaxed m-0">Pewajiban untuk mendapatkan sumber
+                                bekalan minyak pelincir (Lubrex) dan alat ganti penyaman udara secara eksklusif daripada
+                                vendor Ibu Pejabat secara terma tunai.</p>
+                        </div>
+                    </div>
+                    <div class="w-full h-px bg-gray-100 ml-14"></div>
+                    <div class="flex gap-6 items-start">
+                        <div class="text-3xl font-light text-gray-300 w-8 shrink-0 pt-1">04</div>
+                        <div>
+                            <strong class="text-[var(--navy)] text-lg block mb-1">Pematuhan Imej Korporat (CI)</strong>
+                            <p class="text-gray-500 text-sm leading-relaxed m-0">Pematuhan ketat ke atas standard susun
+                                atur bengkel, rekaan papan tanda (fasad), keselesaan ruang menunggu, dan pemakaian
+                                seragam pekerja untuk imej yang seragam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Control Script -->
+    <script>
+        function openBompModal(id) {
+            document.getElementById(id).classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeBompModal(id) {
+            document.getElementById(id).classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+    </script>
 </body>
 
 </html>
