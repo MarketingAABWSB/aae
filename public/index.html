@@ -52,7 +52,7 @@
         }
 
         /* Lighter red accents stay readable against dark panels. */
-        #home, #pengenalan, #sasaran, footer,
+        #navbar, #home, #pengenalan, #sasaran, footer,
         [class*="bg-[var(--ink)]"], .bento-accent {
             --accent: #ff858f;
         }
@@ -101,7 +101,7 @@
             position: relative;
             font-weight: 600;
             font-size: 0.95rem;
-            color: var(--text-secondary);
+            color: #e5e5e5;
             text-decoration: none;
             padding-bottom: 4px;
             transition: color 0.3s;
@@ -114,13 +114,13 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: var(--brand);
+            background: var(--accent);
             border-radius: 2px;
             transition: width 0.3s ease;
         }
 
         .nav-link:hover {
-            color: var(--brand);
+            color: var(--accent);
         }
 
         .nav-link:hover::after {
@@ -341,15 +341,13 @@
 
     <!-- ============ NAVBAR ============ -->
     <header id="navbar"
-        style="position:fixed;top:0;left:0;width:100%;z-index:50;background:rgba(255,255,255,0.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transition:box-shadow 0.3s;">
+        style="position:fixed;top:0;left:0;width:100%;z-index:50;background:var(--ink);border-bottom:1px solid rgba(255,255,255,0.12);transition:box-shadow 0.3s;">
         <nav
             style="max-width:1280px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:68px;">
-            <a href="#home" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-                <img src="assets/aae-logo.png" alt="Azamu Auto Expert (AAE)"
-                    style="height:44px;width:auto;object-fit:contain;">
-                <span
-                    style="font-family:'Outfit',sans-serif;font-weight:800;font-size:1rem;color:var(--ink);letter-spacing:-0.01em;"
-                    class="hidden sm:block brand-label">Azamu Auto Expert</span>
+            <a href="#home"
+                style="display:flex;align-items:center;width:220px;max-width:calc(100% - 48px);text-decoration:none;">
+                <img src="assets/azamu-logo.png" alt="Azamu Auto Expert (AAE)"
+                    style="display:block;height:44px;width:100%;object-fit:cover;">
             </a>
 
             <div style="display:flex;align-items:center;gap:32px;">
@@ -371,7 +369,7 @@
 
                 <!-- Mobile Hamburger Button -->
                 <button id="mobile-menu-btn"
-                    class="md:hidden flex items-center justify-center p-2 rounded-lg hover:bg-gray-100 text-gray-700 transition-colors">
+                    class="md:hidden flex items-center justify-center p-2 rounded-lg hover:bg-white/10 text-gray-200 transition-colors">
                     <span class="material-symbols-rounded text-2xl">menu</span>
                 </button>
             </div>
@@ -379,21 +377,21 @@
 
         <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu"
-            class="hidden md:hidden border-t border-gray-100 bg-white/95 backdrop-blur-xl absolute w-full left-0 top-[68px] shadow-lg shadow-black/5">
+            class="hidden md:hidden border-t border-white/10 bg-[var(--ink)] absolute w-full left-0 top-[68px] shadow-lg shadow-black/20">
             <div class="flex flex-col py-4 px-6 gap-4">
                 <a href="#home"
-                    class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Utama</a>
+                    class="mobile-nav-link text-gray-200 hover:text-white font-semibold text-lg pb-3 border-b border-white/10">Utama</a>
                 <a href="#objektif"
-                    class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Objektif</a>
+                    class="mobile-nav-link text-gray-200 hover:text-white font-semibold text-lg pb-3 border-b border-white/10">Objektif</a>
                 <a href="#sasaran"
-                    class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Sasaran</a>
+                    class="mobile-nav-link text-gray-200 hover:text-white font-semibold text-lg pb-3 border-b border-white/10">Sasaran</a>
                 <a href="#kelebihan"
-                    class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Kelebihan</a>
+                    class="mobile-nav-link text-gray-200 hover:text-white font-semibold text-lg pb-3 border-b border-white/10">Kelebihan</a>
                 <a href="#bomp"
-                    class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Program
+                    class="mobile-nav-link text-gray-200 hover:text-white font-semibold text-lg pb-3 border-b border-white/10">Program
                     BOMP</a>
                 <a href="#locations"
-                    class="mobile-nav-link text-gray-700 font-semibold text-lg pb-3 border-b border-gray-50">Cawangan</a>
+                    class="mobile-nav-link text-gray-200 hover:text-white font-semibold text-lg pb-3 border-b border-white/10">Cawangan</a>
                 <a href="https://api.whatsapp.com/send?phone=60123741726&text=Saya%20berminat%20tentang%20AAE"
                     target="_blank" rel="noopener noreferrer"
                     class="flex items-center justify-center gap-2 bg-[var(--brand)] text-white py-3 px-6 rounded-xl font-bold mt-2">
